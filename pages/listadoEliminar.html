@@ -103,7 +103,7 @@
                 .then(data => {
                     const sociosTable = document.getElementById('socios-table').getElementsByTagName('tbody')[0];
                     sociosTable.innerHTML = ''; 
-                    data.forEach(socios => {
+                    data.forEach(socio => {
                         const row = sociosTable.insertRow();
                         row.innerHTML = `
                             <td>${socio.codigo}</td>
@@ -112,6 +112,7 @@
                             <td>${socio.telefono}</td>
                             <td>${socio.mail}</td>
                             <td>${socio.direccion}</td>
+                            <td>${socio.foto}</td>
                             <td><button onclick="eliminarSocio('${socio.codigo}')">Eliminar</button></td>
                         `;
                     });

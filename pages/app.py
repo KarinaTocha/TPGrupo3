@@ -111,10 +111,9 @@ def listar_socios():
 def mostrar_socio(codigo):
     socio = catalogo.consultar_socio(codigo)
     if socio:
-        return jsonify(socio), 201
+        return jsonify(socio), 200
     else:
         return "Socio no encontrado", 404
-
 
 @app.route("/socios", methods=["POST"])
 def agregar_socio():

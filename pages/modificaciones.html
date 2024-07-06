@@ -81,8 +81,8 @@
                 <label for="documentoModificar">Documento</label>
                 <input type="number" id="documentoModificar" required><br>
 
-                <label for="nombredModificar">Nombre</label>
-                <input type="text" id="nombredModificar" required><br>
+                <label for="nombreModificar">Nombre</label>
+                <input type="text" id="nombreModificar" required><br>
 
                 <label for="telefonoModificar">Teléfono</label>
                 <input type="tel" id="telefonoModificar" required><br>
@@ -102,6 +102,7 @@
                 <input type="file" id="nuevaFoto"><br>
 
                 <button type="submit">Guardar Cambios</button>
+                <a href="modificaciones.html">Cancelar</a>
                 <a href="padron.html">Menu principal</a>
                 
             </form>
@@ -130,7 +131,7 @@
 
         function obtenerSocio(event) {
             event.preventDefault();
-            codigo = document.getElementById('codigo').value;
+            let codigo = document.getElementById('codigo').value;
             fetch(URL + 'socios/' + codigo)
                 .then(response => {
                     if (response.ok) {
@@ -167,7 +168,7 @@
                 if (foto_url && !fotoSeleccionada) { 
 
                                        
-                    fotoActual.src = 'https://www.pythonanywhere.com/user/ktocha/files/home/ktocha/mysite/static/imágenes/' + foto_url;                    
+                    fotoActual.src = 'https://www.pythonanywhere.com/user/ktocha/files/home/ktocha/mysite/static/imagenes/' + foto_url;                    
 			
                     fotoActual.style.display = 'block'; 
                 } else {
