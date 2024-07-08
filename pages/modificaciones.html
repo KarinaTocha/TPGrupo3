@@ -131,7 +131,7 @@
 
         function obtenerSocio(event) {
             event.preventDefault();
-            let codigo = document.getElementById('codigo').value;
+            codigo = document.getElementById('codigo').value;
             fetch(URL + 'socios/' + codigo)
                 .then(response => {
                     if (response.ok) {
