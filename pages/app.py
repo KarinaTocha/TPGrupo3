@@ -95,7 +95,7 @@ class Catalogo:
 # Programa principal (inicializo el catálogo)
 catalogo = Catalogo(host='ktocha.mysql.pythonanywhere-services.com', user='ktocha', password='root-123456', database='ktocha$miapp')
 
-ruta_destino = '/home/ktocha/mysite/static/imagenes/'
+ruta_destino = 'https://www.pythonanywhere.com/user/ktocha/files/home/ktocha/mysite/static/imagenes/'
 
 #catalogo = Catalogo(host='localhost', user='root', password='', database='miapp')
 
